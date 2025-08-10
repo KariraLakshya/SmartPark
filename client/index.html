@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartPark - Parking Reservation System</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">SmartPark</div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/booking.html">Book Parking</a></li>
+        <li><a href="/dashboard.html">My Dashboard</a></li>
+        <li><a href="/login.html" id="auth-link">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero stylish-hero">
+      <div class="hero-overlay">
+        <h1>Find & Reserve Parking Instantly</h1>
+        <p>Smart solutions to save your time and reduce traffic hassle</p>
+        <div class="search-box">
+          <input type="text" id="location-search" placeholder="Search location (e.g. Mall, Hospital)">
+          <input type="date" id="booking-date">
+          <input type="time" id="booking-time">
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Choose SmartPark?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img src="assets/easy-booking.jpg" alt="Easy Booking">
+          <h3>Easy Booking</h3>
+          <p>Reserve your spot in seconds with a few clicks.</p>
+        </div>
+        <div class="feature-card">
+          <img src="assets/safe-parking.jpg" alt="Secure Spots">
+          <h3>Secure Locations</h3>
+          <p>Monitored and verified parking locations city-wide.</p>
+        </div>
+        <div class="feature-card">
+          <img src="assets/saving-time.jpg" alt="Save Time">
+          <h3>Save Time</h3>
+          <p>Say goodbye to circling the block endlessly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartPark. All rights reserved.</p>
+  </footer>
+
+  <script src="js/api.js" type="module"></script>
+  <script src="js/auth.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

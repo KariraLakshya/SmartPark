@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Parking - SmartPark</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">SmartPark</div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard.html">Dashboard</a></li>
+        <li><a href="/login.html" id="auth-link">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="booking-main">
+    <h2>Select a Parking Location</h2>
+
+    <div id="locationSelection" class="location-grid">
+      <!-- Location cards will be injected here -->
+    </div>
+
+    <div id="locationSection" style="display: none;">
+      <h3>Booking Details</h3>
+      <div class="location-summary" id="locationSummary"></div>
+
+      <form id="bookingForm" class="booking-form">
+        <div class="form-group">
+          <label for="vehicleNumber">Vehicle Number</label>
+          <input type="text" id="vehicleNumber" required />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" required />
+        </div>
+
+        <div class="form-group">
+          <label for="duration">Duration (hours)</label>
+          <input type="number" id="duration" min="1" max="24" required />
+        </div>
+
+        <button type="submit" class="book-btn">Book Now</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartPark</p>
+  </footer>
+
+  <script src="js/api.js" type="module"></script>
+  <script src="js/booking.js" type="module"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+
+</html>

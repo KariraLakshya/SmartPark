@@ -1,0 +1,120 @@
+/* Homepage-specific styles */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  border-bottom: 1px solid #ccc;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: wheat;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.feature-card img {
+ width: 90px;
+ height: 90px;
+ object-fit: contain;
+ margin: 1rem;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #009688;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.book-btn:hover {
+  background: #00796b;
+}
+.stylish-hero {
+  background: url('../assets/parking-bg.jpg') center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-box input,
+.search-box button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.search-box input {
+  width: 180px;
+}
+
+.search-box button {
+  background-color: #00bfa5;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  width: 140px;
+}
+
+.search-box button:hover {
+  background-color: #00897b;
+}
+
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
