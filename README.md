@@ -170,15 +170,9 @@ curl http://localhost:5000/api/locations
 
 ## 📸 Screenshots
 
-Place images under `docs/` and reference them here:
-
 | Booking page | Map view |
 |--------------|----------|
 | ![Booking](docs/booking.png) | ![Map](docs/maps.png) |
-
-To add a screenshot/GIF:
-1. Put file in `docs/` folder (create if not present).
-2. Use relative path in the README (example above).
 
 ---
 
